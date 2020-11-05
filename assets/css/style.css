@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* classi utility */
@@ -54,6 +55,7 @@
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .search_menu img{
@@ -92,6 +94,7 @@
 .playlist a{
   color: grey;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .fa-plus-square{
@@ -108,6 +111,7 @@
 .bottom_menu a{
   color: grey;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .bottom_menu hr{
@@ -122,18 +126,31 @@
 
 .covers_section{
   width: calc(100% - 250px);
-  background-color: blue;
+  background-color: #141922;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
+/* subscribe */
+
 .subscribe{
   height: 80px;
   width: calc(100% - 250px);
-  background-color: darkgreen;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   right: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.subscribe .btn{
+  margin-right: 10px;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
 }
 
 /* footer */
