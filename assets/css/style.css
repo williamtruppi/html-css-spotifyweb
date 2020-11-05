@@ -4,7 +4,11 @@
   display: flex;
 }
 
-/* main */
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+/* container */
 
 .wrapper{
   height: 100vh;
@@ -13,18 +17,45 @@
   justify-content: space-between;
 }
 
-/* #site_content{
-  height: calc(100%);
-} */
+/* main */
 
-.main_menu{
-  width: 20%;
-  background-color: chartreuse;
+#site_content{
+  height: calc(100% - 80px);
 }
 
+/* main menu */
+
+.main_menu{
+  min-width: 250px;
+  background-color: black;
+  padding: 10px;
+}
+
+.main_menu img{
+  height: 45px;
+}
+
+/* covers section */
+
 .covers_section{
-  width: 80%;
+  width: calc(100% - 250px);
   background-color: blue;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.subscribe{
+  height: 80px;
+  width: calc(100% - 250px);
+  background-color: darkgreen;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* footer */
+
+#site_footer{
+  height: 80px;
+  background-color: darkgoldenrod;
 }
