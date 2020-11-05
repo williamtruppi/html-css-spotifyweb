@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* classi utility */
 
 .d-flex{
@@ -28,7 +34,7 @@
 .main_menu{
   min-width: 250px;
   background-color: black;
-  padding: 10px;
+  padding: 10px 0 0 10px;
   flex-direction: column;
 }
 
@@ -53,6 +59,63 @@
 .search_menu img{
   height: 30px;
   padding-right: 10px;
+}
+
+/* box_menu */
+
+.box_menu{
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* PLAYLIST */
+
+.playlist{
+  flex-direction: column;
+  color: white;
+  list-style: none;
+}
+
+.playlist ul{
+  margin-top: 10px;
+  height: 200px;
+  padding: 0;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.playlist ul li{
+  margin-bottom: 10px;
+}
+
+.playlist a{
+  color: grey;
+  font-weight: bold;
+}
+
+.fa-plus-square{
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+/* bottom menu */
+
+.bottom_menu{
+
+}
+
+.bottom_menu a{
+  color: grey;
+  font-weight: bold;
+}
+
+.bottom_menu hr{
+  margin: 10px 0;
+}
+
+.fa-user-circle{
+  font-size: 30px;
 }
 
 /* covers section */
