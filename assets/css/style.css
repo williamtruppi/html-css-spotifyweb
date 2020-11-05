@@ -29,10 +29,30 @@
   min-width: 250px;
   background-color: black;
   padding: 10px;
+  flex-direction: column;
 }
 
-.main_menu img{
+.logo img{
   height: 45px;
+}
+
+/* search menu */
+
+.search_menu{
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search_menu a{
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.search_menu img{
+  height: 30px;
+  padding-right: 10px;
 }
 
 /* covers section */
