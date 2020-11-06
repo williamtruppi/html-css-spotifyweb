@@ -120,8 +120,8 @@
   margin: 10px 0;
 }
 
-.fa-user-circle{
-  font-size: 30px;
+.fa-user-circle, .fa-arrow-alt-circle-down{
+  font-size: 25px;
 }
 
 /* covers section */
@@ -186,13 +186,13 @@
 
 /* recently played */
 
-#recently_played{
+#recently_played, #created_for, #popular_artist{
   width: 100%;
   padding: 20px 0 0 15px;
   color: white;
 }
 
-.box_recently{
+.box_songs{
   margin-top: 10px;
   text-align: center;
 }
@@ -226,20 +226,31 @@
   align-items: center;
 }
 
-.box_recently a:hover .overlay{
+.box_songs a:hover .overlay{
   opacity: 1;
 }
 
-.box_recently a{
+.box_songs a{
   text-decoration: none;
   color: white;
 }
+
+/* popular artist */
+
+#popular_artist img, #popular_artist .overlay{
+  border-radius: 50%;
+}
+
+
+
 
 /* footer */
 
 #site_footer{
   height: 80px;
-  background-color: darkgoldenrod;
+  background-color: #282828;
+  color: white;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 560px){
