@@ -44,6 +44,12 @@
   height: 45px;
 }
 
+.only_symbol{
+  color: white;
+  font-size: 40px;
+  display: none;
+}
+
 /* search menu */
 
 .search_menu{
@@ -53,6 +59,7 @@
 }
 
 .search_menu a{
+  width: fit-content;
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
@@ -118,7 +125,7 @@
 }
 
 .bottom_menu hr{
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .fa-user-circle, .fa-arrow-alt-circle-down{
@@ -332,18 +339,29 @@
 /* device xs */
 @media screen and (max-width: 767px){
 
-  .main_menu span, .main_menu hr{
+  .main_menu, .search_menu, .bottom_menu{
+    align-items: center;
+  }
+
+  .main_menu span, .main_menu hr, .playlist{
     display: none;
   }
 
-  .playlist{
-    opacity: 0;
+  .box_menu{
+    justify-content: flex-end;
   }
 
   .item{
   flex-basis: calc(100% / 2);
   }
-}
+
+  .logo > a:first-child{
+    display: none;
+  }
+  
+  .only_symbol{
+    display: block;
+  }
 
 /* device sm */
 @media screen and (min-width: 768px) and (max-width: 991px){
