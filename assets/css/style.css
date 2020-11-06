@@ -206,7 +206,7 @@
 }
 
 .covers_section img{
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -329,6 +329,7 @@
   padding: 0 10px;
 }
 
+/* device xs */
 @media screen and (max-width: 767px){
 
   .main_menu span, .main_menu hr{
@@ -341,5 +342,21 @@
 
   .item{
   flex-basis: calc(100% / 2);
+  }
+}
+
+/* device sm */
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  .item{
+  flex-basis: calc(100% / 3);
+  }
+}
+
+/* device md */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+  .item{
+  flex-basis: calc(100% / 4);
   }
 }
