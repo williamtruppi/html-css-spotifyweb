@@ -22,6 +22,7 @@
   max-width: 100vw;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 /* main */
@@ -145,6 +146,7 @@
   right: 0;
   justify-content: flex-end;
   align-items: center;
+  z-index: 2;
 }
 
 .subscribe .btn{
@@ -190,6 +192,7 @@
   width: 100%;
   padding: 20px 0 0 15px;
   color: white;
+  z-index: 1;
 }
 
 .box_songs{
@@ -241,17 +244,16 @@
   border-radius: 50%;
 }
 
-
-
-
 /* footer */
 
 #site_footer{
+  width: 100vw;
   height: 100px;
+  padding: 15px;
   background-color: #282828;
   color: white;
   justify-content: space-between;
-  padding: 15px;
+  align-items: center;
 }
 
 /* footer left */
@@ -264,6 +266,7 @@
 .footer_left{
   height: 100%;
   align-items: center;
+  flex-basis: 25%;
 }
 
 .footer_left img{
@@ -278,7 +281,55 @@
   margin-left: 15px;
 }
 
-@media screen and (max-width: 560px){
+/* footer player */
+
+.footer_player{
+  flex-basis: 50%;
+}
+
+/* top */
+.player_top{
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.player_top i{
+  padding: 0 15px;
+}
+
+.fa-play-circle{
+  font-size: 40px;
+}
+
+/* bottom */
+.player_bottom{
+  align-items: center;
+  justify-content: center;
+}
+
+.player_bottom span{
+  padding: 0 20px
+}
+
+.player_bottom input{
+  width: 300px;
+}
+
+/* footee right */
+
+.footer_right{
+  align-items: center;
+  flex-basis: 25%;
+  justify-content: flex-end;
+}
+
+.footer_right i{
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 767px){
 
   .main_menu span, .main_menu hr{
     display: none;
