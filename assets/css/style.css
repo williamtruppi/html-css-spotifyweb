@@ -164,6 +164,7 @@ a.d-flex{
 .choose_genre ul{
   list-style: none;
   justify-content: center;
+  height: 40px;
 }
 
 .choose_genre a{
@@ -176,9 +177,11 @@ a.d-flex{
   padding: 10px;
 }
 
-.choose_genre ul li:hover{
+.choose_genre ul li:hover .underline{
   border-bottom: 2px solid orange;
   padding-bottom: 5px;
+  width: 40px;
+  margin: 0 auto;
 }
 
 /* recently played */
@@ -243,7 +246,7 @@ a.d-flex{
 #site_footer{
   width: 100vw;
   height: 100px;
-  padding: 15px;
+  padding: 5px 15px;
   background-color: #282828;
   color: white;
   justify-content: space-between;
@@ -279,7 +282,7 @@ a.d-flex{
 
 /* top */
 .player_top{
-  margin-bottom: 10px;
+  height: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -293,11 +296,12 @@ a.d-flex{
 }
 
 #site_footer .fa-play-circle:hover{
-  font-size: 4.5rem;
+  font-size: 50px;
 }
 
 /* bottom */
 .player_bottom{
+  height: 30px;
   align-items: center;
   justify-content: center;
 }
