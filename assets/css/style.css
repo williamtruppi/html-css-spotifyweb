@@ -246,6 +246,7 @@ a.d-flex{
   color: white;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 }
 
 /* footer left */
@@ -286,11 +287,11 @@ a.d-flex{
   padding: 0 1rem;
 }
 
-.fa-play-circle{
+#site_footer .fa-play-circle{
   font-size: 4rem;
 }
 
-.fa-play-circle:hover{
+#site_footer .fa-play-circle:hover{
   font-size: 4.5rem;
 }
 
