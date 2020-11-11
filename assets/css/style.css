@@ -88,6 +88,7 @@ a.d-flex{
 /* PLAYLIST */
 
 .playlist{
+  height: calc(100% - 65px);
   margin-top: 10px;
   color: white;
   list-style: none;
@@ -95,8 +96,8 @@ a.d-flex{
 }
 
 .playlist ul{
+  height: calc(100% - 80px);
   margin-top: 10px;
-  height: 60%;
   list-style: none;
   overflow-y: auto;
 }
@@ -111,6 +112,11 @@ a.d-flex{
 }
 
 /* bottom menu */
+
+.bottom_menu{
+  height: 65px;
+  justify-content: flex-end;
+}
 
 .bottom_menu hr{
   margin: 5px 0;
